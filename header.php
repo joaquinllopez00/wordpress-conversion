@@ -24,7 +24,7 @@
       <li>
         <a href="<?php echo site_url('');?>/blog">Blog</a>
       </li>
-      <li><a href="<?php echo site_url('');?>/what-im-working-on">What I'm Working On</a></li>
+      <li><a href="<?php echo site_url('');?>/projects">What I'm Working On</a></li>
       <li><a href="<?php echo site_url('');?>/about">About</a></li>
       <li>
         <input type="text" placeholder="Search JL Codes" />
@@ -49,7 +49,7 @@
       <li>
         <a href="<?php echo site_url('');?>/blog">Blog</a>
       </li>
-      <li><a href="<?php echo site_url('');?>/what-im-working-on">What I'm Working On</a></li>
+      <li><a href="<?php echo site_url('');?>/projects">What I'm Working On</a></li>
       <li><a href="<?php echo site_url('');?>/about">About</a></li>
       <li>
 
