@@ -62,3 +62,7 @@
   <div id="searchbox">
     <input type="text" placeholder="Search JL Codes" />
   </div>
+
+  <?php if(!is_front_page(  )){ ?>
+  <main>
+    <?php } ?>

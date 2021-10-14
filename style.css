@@ -100,7 +100,7 @@ nav {
   background: #202125;
   width: 100%;
   margin: 0;
-  position: fixed;
+
   font-family: "Roboto Condensed", sans-serif;
   font-size: 20px;
   display: flex;
@@ -389,6 +389,12 @@ footer #social-media-footer ul li:hover a .fa-instagram {
 }
 
 /* blogpost */
+
+.post-title {
+  margin-top: 6rem;
+  font-size: 25px;
+}
+
 #post-container {
   display: flex;
 }
@@ -491,10 +497,6 @@ footer #social-media-footer ul li:hover a .fa-instagram {
 }
 
 @media screen and (max-width: 600px) {
-  main {
-    width: 100%;
-  }
-
   h1 {
     font-size: 48px;
   }

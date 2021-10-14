@@ -19,19 +19,23 @@
 
 
     <div class="card">
-      <h2><?php echo get_the_post_thumbnail_url(get_the_ID())?></h2>
+
+      <?php if(get_the_post_thumbnail_url(get_the_ID()) != "" ) {?>
       <div class="card-img">
         <a href="<?php the_permalink()?>">
           <img src="<?php echo get_the_post_thumbnail_url( get_the_ID()) ?>" alt="Card Image" />
         </a>
       </div>
+      <?php } ?>
       <div class="card-description">
         <a href="<?php the_permalink()?>">
           <h3><?php the_title()?></h3>
         </a>
         <div class="card-meta">
-          Posted by <?php the_author(); ?> on <?php the_time('F j, Y')?> in
-          <a href="#"><?php echo get_the_category_list()?></a>
+          Posted by <?php the_author(); ?> on <?php the_time('F j, Y')?>
+          <?php if(get_the_category_list() != ""){ ?>
+          in <a href="#"><?php echo get_the_category_list()?></a>
+          <?php } ?>
         </div>
         <p>
           <?php wp_trim_words(get_the_excerpt(), 30);  ?>
