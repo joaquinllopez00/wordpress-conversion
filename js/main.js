@@ -4,14 +4,16 @@ const searchIcon = document.getElementById("search-icon");
 const searchBox = document.getElementById("searchbox");
 
 searchIcon.addEventListener("click", () => {
-  if (searchBox.style.top === "76px") {
-    searchBox.style.top = "24px";
+  console.log(searchBox.style);
+
+  if (searchBox.style.opacity === "1") {
+    searchBox.style.transform = "translateY(-100%)";
+    searchBox.style.opacity = "0";
     searchBox.style.pointerEvents = "none";
   } else {
-    console.log("search");
-    searchBox.style.top = "76px";
+    searchBox.style.transform = "translateY(0)";
+    searchBox.style.opacity = "1";
     searchBox.style.pointerEvents = "auto";
-    console.log(searchBox);
   }
 });
 

@@ -27,8 +27,8 @@
       <li><a href="<?php echo site_url('');?>/projects">What I'm Working On</a></li>
       <li><a href="<?php echo site_url('');?>/about">About</a></li>
       <li>
-        <input type="text" placeholder="Search JL Codes" />
 
+        <?php get_search_form()?>
       </li>
     </ul>
   </div>
@@ -60,7 +60,8 @@
     </ul>
   </nav>
   <div id="searchbox">
-    <input type="text" placeholder="Search JL Codes" />
+
+    <?php get_search_form()?>
   </div>
 
   <?php if(!is_front_page(  )){ ?>
