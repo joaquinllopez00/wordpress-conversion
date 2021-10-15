@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 
-<?php 
 
+
+<?php 
+echo 'hello';
   while(have_posts()){
     the_post();
     ?>
