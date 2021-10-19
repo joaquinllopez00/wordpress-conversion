@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div id="banner">
-  <h1>&lt;JL Codes/&gt;</h1>
+  <h1>Joaquin in Tech</h1>
   <h3>Keep up with my Journey</h3>
 </div>
 <main>
@@ -27,11 +27,7 @@
 
 
     <div class="card">
-      <div class="card-img">
-        <a href="<?php the_permalink()?>">
-          <img src="<?php echo get_the_post_thumbnail_url( get_the_ID()) ?>" alt="Card Image" />
-        </a>
-      </div>
+
       <div class="card-description">
         <a href="<?php the_permalink()?>">
           <h3><?php the_title()?></h3>
