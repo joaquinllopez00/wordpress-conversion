@@ -27,7 +27,7 @@
       <li><a href="<?php echo site_url('');?>/projects">What I'm Working On</a></li>
       <li><a href="<?php echo site_url('');?>/about">About</a></li>
       <li>
-
+        w
         <?php get_search_form()?>
       </li>
     </ul>

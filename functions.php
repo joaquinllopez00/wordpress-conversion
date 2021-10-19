@@ -2,8 +2,8 @@
 
 //css and js files
 function linkFiles(){
-  wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto+Slab&family=Roboto:wght@300&display=swap');
-  wp_enqueue_style('fontaweomse', 'https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+  wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap');
+  wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v5.6.3/css/all.css');
   // wp_enqueue_style('style', get_stylesheet_uri(), NULL, microtime(), get_template_directory_uri() . '/style.css');
   wp_enqueue_script( 'main', get_theme_file_uri('/js/main.js' ), NULL, microtime(), true);
 }

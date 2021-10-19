@@ -1,14 +1,18 @@
 <?php get_header(); ?>
 
 <div id="banner">
-  <h1>Joaquin in Tech</h1>
-  <h3>Keep up with my Journey</h3>
+  <div class="banner-content">
+    <h1>Joaquin in Tech</h1>
+    <h3>Keep up with my Journey</h3>
+  </div>
+
+
 </div>
 <main>
   <a href="<?php echo site_url('');?>/blog">
-    <h2 class="section-heading">All Blog Posts</h2>
+    <h2 class="section-heading">Recent Blog Posts</h2>
   </a>
-  <section>
+  <section id="blog-posts">
 
 
     <?php 
@@ -26,14 +30,18 @@
   ?>
 
 
-    <div class="card">
+    <div class="card blog-post">
 
       <div class="card-description">
         <a href="<?php the_permalink()?>">
           <h3><?php the_title()?></h3>
         </a>
         <p>
-          <?php wp_trim_words(get_the_excerpt(), 30);  ?>
+          <?php 
+          $my_content = apply_filters('the_content', get_the_content());
+          $my_content = wp_strip_all_tags($my_content);
+
+          echo wp_trim_words($my_content, 50);  ?>
         </p>
         <a href="<?php the_permalink()?>" class="btn-readmore">Read More</a>
       </div>
@@ -43,7 +51,7 @@
     wp_reset_query()?>
   </section>
   <a href="<?php echo site_url('');?>/blog">
-    <h2 class="section-heading">All Projects</h2>
+    <h2 class="section-heading">Recent Projects</h2>
   </a>
   <section>
     <?php 
