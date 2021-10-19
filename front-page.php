@@ -93,11 +93,10 @@
   <h2 class="section-heading">Source Code</h2>
   <section id="section-source">
     <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, libero. Dolorem aperiam fuga mollitia
-      molestias exercitationem tempora. Odio dolorem aperiam nobis molestiae atque, hic sequi assumenda id odit vero
-      ex?
+      While a repo is generally linked within each page, you are more than welcome to view my entire Github
+      profile. Feel to take a peek!
     </p>
-    <a href="#" class="btn-readmore">Github Profile</a>
+    <a href="#" class="btn-readmore">View Github</a>
   </section>
 
   <?php get_footer(); ?>

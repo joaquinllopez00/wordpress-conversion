@@ -73,7 +73,7 @@ textarea:focus {
 .banner-content {
   background: rgba(30, 45, 64, 0.7);
   border-radius: 10px;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -246,15 +246,20 @@ section {
   padding: 3px 48px;
   background-color: #1e2d40;
 }
+#section-source {
+  margin-bottom: 3rem;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 
 #section-source p {
   padding: 8px;
-  text-align: center;
 }
 
 #section-source a {
-  margin: 8px;
+  margin: 8px 8px 8px 55px;
   text-align: center;
+  width: 90px;
 }
 
 /* card */
