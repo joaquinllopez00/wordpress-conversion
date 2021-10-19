@@ -11,11 +11,11 @@ body {
 
 body {
   font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
 }
 
 h1 {
   padding: 8px;
-
   border-radius: 8px;
   margin: 0;
   font-size: 64px;
@@ -28,6 +28,7 @@ p {
 
 main {
   margin: 0 auto;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -138,7 +139,7 @@ nav ul {
 }
 
 .active {
-  color: #f783ae;
+  color: #314968;
 }
 
 #logo-img {
@@ -222,6 +223,7 @@ section {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin: 3rem 0rem;
 }
 
 #blog-posts {
@@ -235,8 +237,9 @@ section {
 .section-heading {
   font-size: 32px;
   font-family: "Robot Condensed", sans-serif;
-  border-left: 3px solid black;
-  border-right: 3px solid black;
+  border-top: 3px solid #1e2d40;
+  border-left: 3px solid #1e2d40;
+  border-right: 3px solid #1e2d40;
   transition: all 0.4s;
   display: inline-block;
   padding: 4px 32px;
@@ -246,6 +249,7 @@ section {
   padding: 3px 48px;
   background-color: #1e2d40;
 }
+
 #section-source {
   margin-bottom: 3rem;
   flex-direction: column;
@@ -263,6 +267,17 @@ section {
 }
 
 /* card */
+.card.blog-post {
+  width: 100%;
+  margin: 1rem 0rem;
+}
+
+.card {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 10px;
+}
+
 .card-img {
   transition: 0.4s;
 }
@@ -320,7 +335,7 @@ footer a {
 
 footer #left-footer {
   flex: 1;
-  border-right: 1px solid red;
+  border-right: 1px solid #eee;
   padding-left: 32px;
   width: 50%;
 }
