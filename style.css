@@ -233,10 +233,7 @@ section {
 
 #blog-posts {
   flex-direction: column;
-}
-
-.card.blog-post {
-  width: 100%;
+  position: relative;
 }
 
 .section-heading {
@@ -273,7 +270,7 @@ section {
 
 /* card */
 .card.blog-post {
-  width: 100%;
+  width: 97%;
   margin: 1rem 0rem;
 }
 
@@ -292,7 +289,7 @@ section {
 }
 
 .card .card-description {
-  padding: 0 8px;
+  /* padding: 0 8px; */
 }
 
 .card-meta-blogpost {
@@ -498,7 +495,7 @@ footer #social-media-footer ul li:hover a .fa-instagram {
 
 @media screen and (max-width: 719px) {
   main {
-    width: 95%;
+    width: 100%;
   }
 
   section {
