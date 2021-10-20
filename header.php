@@ -19,7 +19,7 @@
   <div id="slideout-menu">
     <ul>
       <li>
-        <a class="active" href="<?php echo site_url('');?>">Home</a>
+        <a class="" href="<?php echo site_url('');?>">Home</a>
       </li>
       <li>
         <a href="<?php echo site_url('');?>/blog">Blog</a>
@@ -27,7 +27,7 @@
       <li><a href="<?php echo site_url('');?>/projects">What I'm Working On</a></li>
       <li><a href="<?php echo site_url('');?>/about">About</a></li>
       <li>
-        w
+
         <?php get_search_form()?>
       </li>
     </ul>
@@ -44,7 +44,7 @@
     </div>
     <ul>
       <li>
-        <a class="active" href="<?php echo site_url('');?>">Home</a>
+        <a class="" href="<?php echo site_url('');?>">Home</a>
       </li>
       <li>
         <a href="<?php echo site_url('');?>/blog">Blog</a>
@@ -54,7 +54,7 @@
       <li>
 
         <div id="search-icon">
-          <i class="fas fa-search"></i>
+          <i class="fas fa-search active"></i>
         </div>
       </li>
     </ul>
