@@ -62,7 +62,7 @@ textarea:focus {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: rgba(0, 0, 0, 0.2) url("assets/sample-img.jpg");
+  background: rgba(0, 0, 0, 0.4) url("assets/sample-img.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -131,7 +131,7 @@ nav a {
 
 nav a:hover {
   text-decoration: none;
-  color: blue;
+  color: #00ffc3;
 }
 
 nav ul {
@@ -144,7 +144,7 @@ nav ul {
 }
 
 .active {
-  color: #314968;
+  color: #00ffc3;
 }
 
 #logo-img {
@@ -224,16 +224,23 @@ nav ul {
 
 /* sections */
 
-section {
+section:not(#blog-posts) {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 2rem;
   margin: 3rem 0rem;
 }
 
 #blog-posts {
+  display: flex;
+  justify-content: space-around;
   flex-direction: column;
   position: relative;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+  margin: 3rem 0rem;
 }
 
 .section-heading {
@@ -248,8 +255,9 @@ section {
 }
 
 .section-heading:hover {
-  padding: 3px 48px;
+  padding: 4px 48px;
   background-color: #1e2d40;
+  color: #00ffc3;
 }
 
 #section-source {
@@ -288,8 +296,12 @@ section {
   box-shadow: 0 10px 6px -6px #777;
 }
 
-.card .card-description {
-  /* padding: 0 8px; */
+.card .card-description > a > h3 {
+  font-size: 25px;
+}
+
+.card .card-description p {
+  color: rgb(88, 88, 88);
 }
 
 .card-meta-blogpost {
@@ -318,8 +330,8 @@ section {
 .btn-readmore:hover {
   background-color: #1e2d40;
   text-decoration: none;
-  padding: 8px 64px;
-  color: white;
+  padding: 8px 34px;
+  color: #00ffc3;
 }
 
 /* footer */
