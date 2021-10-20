@@ -7,11 +7,11 @@ searchIcon.addEventListener("click", () => {
   console.log(searchBox.style);
 
   if (searchBox.style.opacity === "1") {
-    searchBox.style.transform = "translateY(-100%)";
+    searchBox.style.transform = "translateX(-100%)";
     searchBox.style.opacity = "0";
     searchBox.style.pointerEvents = "none";
   } else {
-    searchBox.style.transform = "translateY(0)";
+    searchBox.style.transform = "translateX(0)";
     searchBox.style.opacity = "1";
     searchBox.style.pointerEvents = "auto";
   }
